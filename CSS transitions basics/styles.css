@@ -1,14 +1,70 @@
-button {
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: blue;
-    color: white;
-    transition: all 1s ease-in-out;
+
+.container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
-button:hover {
+.move {
+    margin: .2rem;
+    width: 150px;
+    height: 100px;
+    background-color: #ff0000;
+    transition: all 1s ease-in-out;
+    color: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    font-size: 20px;
+    transition-property: translate() width;
+    transition-duration: 3s;
+}
+
+#ease {
+    transition-timing-function: ease;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+#cubic-bezier {
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.move:hover {
+    transform: translate(900px, 0px);
+}
+
+#text-button{
+    margin: .2rem;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    transition-duration: 3s;
+    transition-property: transform, ease-in-out 5s ;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#text-button:hover{
+    transform: translate(600px, 0px);
+    color: #fff;
+    /* height: 50px; */
+    
+    width: 200px;
+    border-radius: 10rem;
     background-color: red;
+    color: yellow;
+
 }
