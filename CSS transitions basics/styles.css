@@ -1,0 +1,14 @@
+button {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+button:hover {
+    background-color: red;
+}
