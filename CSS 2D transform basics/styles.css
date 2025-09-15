@@ -1,0 +1,33 @@
+.container {    
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.img-example {
+    width: 300px;
+    height: 300px;
+    transition: transform 1s ease-in-out;
+    transform-origin: 0% 30%;
+}
+
+.img-example:hover {
+    /* transform: translateX(-100px);  Negative */
+    /* transform: translateY(500px); Possitive  */
+     /* transform: translate(500px, 500px);   */
+     /* transform: scale(2, 2);  */
+     /* transform: scaleY(2);  */
+     /* transform: scaleX(.5);  */
+     /* transform: scaleY(.5);   */
+     /* transform: rotate(90deg);  */
+     /* transform: rotate(1turn);  */
+     /* transform: skew(45deg, 45deg);  */
+    /* transform: skewX(45deg);  */
+     /* transform: skewY(45deg);  */
+     transform: rotate(45deg);
+
+
+ 
+
+}
