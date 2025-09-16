@@ -1,11 +1,14 @@
-.container {
+.body {
     height: 100vh;
     width: auto;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    
 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 
@@ -187,3 +190,1048 @@
 }
 
 /* Sexto efecto */
+
+.six-effect {
+    text-decoration: none;
+    color: #262626;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 3px solid #262626;
+    padding: 40px 80px;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+    overflow: hidden;
+}
+.six-effect:hover {
+    background-color: #F44336;
+}
+.six-effect::before {
+    content: "";
+    background-color: wheat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.8s;
+}
+
+.six-effect:hover:before {
+    transform: translateX(90%) rotate(45deg);
+}
+
+/*  efecto siete */
+
+.seven-effect {
+    text-decoration: none;
+    background-color: #262626;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 4px solid #262626;
+    padding: 40px 80px;
+    position: relative;
+    cursor: pointer;
+    color: wheat;
+    overflow: hidden;
+}
+
+.seven-effect:before {
+    content: "Hover me";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fffa65;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: translate(-100%, -100%) ;
+
+}
+
+.seven-effect:hover:before {
+    transform: translate(0%, 0%);
+}
+
+.seven-effect:hover:after {
+    transform: translate(0%, 0%);
+
+}
+
+/* octavo efecto */
+
+.eight-effect {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #262626;
+    font-size: 40px;
+    border: 3px solid #262626;
+    padding: 40px 80px;
+    cursor: pointer;
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+.eight-effect:before {
+    content: "Hover me";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(5);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.eight-effect:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* efecto con boton */
+
+.btn {
+    border: 2px solid tomato;
+    background: none;
+    color: tomato;
+    padding: 20px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+
+}
+.btn:hover {
+    color: white;
+}
+
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    height: 0%;
+    transition: all 0.5s;
+
+}
+
+.btn:hover:before {
+    height: 190%;
+}
+
+/* nine-effect */
+
+.nine-effect {
+    padding: 20px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.nine-effect:before {
+    content: "button";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2ce771;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transform-origin: top;
+    transition: all 0.5s;
+    transform: rotateX(270deg);
+}
+
+.nine-effect:hover:before {
+    transform: rotateX(0deg);
+}
+
+/* ten-effect */
+.ten-effect {
+    padding: 20px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color:   transparent;
+    border: 3px solid #ff0;
+    position: relative;
+    cursor: pointer;
+
+}
+.ten-effect:before {
+    content: "Button";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: left ;
+    transition: all 0.5s;
+    color: #ff0;
+    
+    
+}
+
+.ten-effect:hover:before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+}
+
+.ten-effect:after {
+    content: "Heelo";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+    color: #ff0;
+
+    
+
+    transition: all 0.5s;
+}
+
+.ten-effect:hover:after {
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+}
+/* eleven-effect */
+
+.eleven-effect {
+    width: 220px;
+    height: 90px;
+    color: #ff0;
+    background-color: transparent;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    transition: all 0.5s;
+    position: relative;
+    cursor: pointer;   
+}
+
+
+
+.eleven-effect:before,
+.eleven-effect:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #ff0;
+    border-radius: 50%;
+    transform: translatex(-50%) ; 
+    transition: all 0.3s;
+    z-index: -1;
+    
+}
+.eleven-effect:before {
+    left: 0;
+    box-shadow: -100px 0 0 green;
+    
+}
+.eleven-effect:after {
+    right: 0;
+    box-shadow: 100px 0 0 blue;
+}
+
+.eleven-effect:hover:before {
+    left: 50%;
+    box-shadow: 30px 0 0 #ff0;
+    transform: translateX(-50%) rotateY(-50deg);
+}
+.eleven-effect:hover:after {
+    right: 50%;
+    box-shadow: -30px 0 0 #ff0;
+    transform: translateX(50%) rotateX(-50deg);
+}
+
+.span-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0;
+    border-radius: 8px;
+    transform: scale(0);
+    transition: all 0.5s;
+    
+
+}
+
+.eleven-effect:hover .span-effect {
+    transform: scale(1);
+    transition-delay: 0.4s;
+    
+}
+
+.eleven-effect {
+    color: #262626;
+    transition-delay: 0.4s;
+}
+
+/* twelve-effect */
+
+.twelve-effect {
+    width: 300px;
+    height: 60px;
+    text-decoration: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: bold;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.2;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.twelve-effect:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    background-color: #20caff;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    transition: all 0.2s;
+    transform-origin: top;
+}
+
+.twelve-effect:hover:before {
+    top: -6px;
+    left: 0;
+    transform: perspective(1000px) rotateX(75deg);
+}
+
+.twelve-effect:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    background-color: #ff7675;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    transition: all 0.2s;
+    transform-origin: bottom;
+}
+
+.twelve-effect:hover:after {
+    top: 6px;
+    left: 0;
+    transform: perspective(1000px) rotateX(-75deg);
+}
+.twelve-effect:hover {
+    color: #262626;
+}
+
+/* thirteen-effect */
+
+.thirteen-effect {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #f6b93b;
+    letter-spacing: 3px;
+    padding: 25px 50px;
+    border: 3px solid #f6b93b;
+    transition: all 0.5s;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+
+.thirteen-effect:before,
+.thirteen-effect:after,
+.span-effect-two:before,
+.span-effect-two:after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #f6b93b;
+    z-index: -1;
+    transition: all 0.5s;
+    color: #272727;
+    
+}
+.thirteen-effect:before {
+    top: 100%;
+    left: 15%;
+}
+
+.thirteen-effect:hover:before {
+    top: 0;
+    left: 25%; ;
+}
+
+
+.thirteen-effect:after {
+    top: -100%;
+    right: 35%;
+}
+
+.thirteen-effect:hover:after {
+    top: 0;
+    left: 50%;
+}
+
+.thirteen-effect .span-effect-two:before {
+    top: 100%;
+    right: 0%;
+}
+
+.thirteen-effect:hover .span-effect-two:before {
+    top: 0;
+    right: 0%;
+}
+
+.thirteen-effect .span-effect-two:after {
+    top: 0;
+    left: -25%;
+}
+
+.thirteen-effect:hover .span-effect-two:after {
+    top: 0;
+    left: 0%;
+}
+
+.thirteen-effect:hover {
+    color: #262626;
+}
+
+/* fourteen-effect */
+
+.fourteen-effect {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    text-align: center;
+    color: #fdc518;
+    position: relative;
+}
+
+.fourteen-effect:before {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 200px;
+    top: -15px;
+    left: 0;
+    border-left: 5px solid red;
+    border-right: 5px solid #FDC518;
+    transition: all 1s;
+}
+.fourteen-effect:after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 230px;
+    top: 0;
+    left: -15px;
+    border-top: 5px solid red;
+    border-bottom: 5px solid #FDC518;
+    transition: all 1s;
+}
+
+.fourteen-effect:hover:before {
+    transform: rotateY(180deg);
+}
+
+.fourteen-effect:hover:after {
+    transform: rotateX(180deg);
+}
+
+/* fifteen-effect */
+
+.fifteen-effect {
+   border: none;
+   padding: 12px 40px;
+   background-color: #c47135;
+   color: white;
+   font-family: serif;
+   font-size: 22px;
+   text-transform: uppercase;
+   cursor: pointer;
+   position: relative;
+        
+}
+
+.fifteen-effect:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -5px;
+    left: -5px;
+    border-top: 2px solid #c47135;
+    border-left: 2px solid #c47135;
+    transition: all 0.25s;
+}
+
+.fifteen-effect:hover:before {
+    height: 100%;
+    width: 100%;
+}
+
+
+.fifteen-effect:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: -5px;
+    right: -5px;
+    border-bottom: 2px solid #c47135;
+    border-right: 2px solid #c47135;
+    transition: all 0.25s;
+}
+
+.fifteen-effect:hover:after {
+    height: 100%;
+    width: 100%;
+
+}
+
+/* sixteen-effect */
+
+.sixteen-effect {
+   text-decoration: none;
+   width: 160px;
+   height: 60px;
+   color: black;
+   border: 2px solid black;
+   text-align: center;
+   line-height: 60px;
+   font-size: 25px;
+   position: relative;
+   transition: all 0.2s;    
+}
+
+.sixteen-effect:hover {
+    color: white;
+}
+
+.sixteen-effect:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: all 0.8s;
+}
+
+.sixteen-effect:hover:before {
+    opacity: 1;
+    transform: rotate(15deg);
+}
+
+.sixteen-effect:before .span-effect-three {
+    content: "B";
+    color: transparent;
+    position: relative;
+}
+
+.sixteen-effect .span-effect-three:before {
+    content: "B";
+    left: 24%;
+    position: absolute;
+    color: black;
+    transition: all 0.8s;
+}
+
+.sixteen-effect:hover .span-effect-three:before {
+    color: white;
+    font-size: 80px;
+    transform: translate(-65%, -10%) rotate(360deg);
+}
+
+
+
+/* seventeen-effect */
+
+.seventeen-effect {
+    background-color: red;
+    border: none;
+    position: relative;
+    width: 400px;
+    height: 120px;
+    text-transform: uppercase;
+    line-height: 120px;
+    padding: 15px 32px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 15px;
+    overflow: hidden;
+
+}
+
+
+.seventeen-effect:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.seventeen-effect:hover:before {
+    left: 0;
+}
+
+.seventeen-effect:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.seventeen-effect:hover:after {
+    right: 0;
+}
+
+.span-effect-four:before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.seventeen-effect:hover .span-effect-four:before {
+    top: 0;
+}
+
+
+.span-effect-four:after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.seventeen-effect:hover .span-effect-four:after {
+    bottom: 0;
+}
+
+/* eighteen-effect */
+
+
+.eighteen-effect {
+  text-decoration: none;
+  width: 160px;
+  height: 60px;
+  color: black;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.eighteen-effect .span-effect-five {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 2px solid black;
+  z-index: -1;
+}
+
+.span-effect-five:before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.eighteen-effect:hover .span-effect-five:before {
+  width: 100%;
+  background-color: black;
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.eighteen-effect:hover {
+  color: white;
+}
+
+
+/* nineteen-effect */
+
+
+
+.nineteen-effect {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: 7px;
+    padding: 18px 30px;
+    background: transparent;
+    font-size: 28px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nineteen-effect:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: -1%;
+    top: -5%;
+    background-color: #ee5253;
+    transform: skew(30deg);
+    z-index: -1;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nineteen-effect:hover:before {
+    transform: skew(0deg);
+    left: 50%;
+    top: 0;
+}
+
+
+.nineteen-effect:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 51%;
+    top: 5%;
+    background-color: #0a3d62;
+    transform: skew(30deg);
+    z-index: -1;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nineteen-effect:hover:after {
+    transform: skew(0deg);
+    left: 0;
+    top: 0;
+}
+
+
+/* twenty-effect */
+
+
+.twenty-effect {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px 50px;
+    background-color: white;
+    color: #777;
+    border-radius: 100px;
+    font-size: 24px;
+    transition: all 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twenty-effect::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #2ce771;
+   border-radius: 100px;
+   transition: all 0.25s;
+   z-index: -1;
+}
+
+.twenty-effect:hover:before {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.twenty-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.twenty-effect:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* twenty-one-effect */
+
+
+.twenty-one-effect {
+    text-decoration: none;
+    position: relative;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #250e74;
+    border: 4px solid #250e74;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.twenty-one-effect:hover {
+    color: white;
+}
+
+
+.twenty-one-effect:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-top: 40px solid #250e74;
+    border-bottom: 40px solid #250e74;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    transition: all 0.5s;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.twenty-one-effect:hover:before {
+    transform: translateX(0%);
+}
+
+.twenty-one-effect::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-top: 40px solid #250e74;
+    border-bottom: 40px solid #250e74;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    transition: all 0.5s;
+    z-index: -1;
+    transform: translateX(100%);
+}
+
+.twenty-one-effect:hover::after {
+    transform: translateX(0%);
+}
+
+/* twenty-two-effect */
+
+.container-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.twenty-two-effect {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border: 2px solid #1e9bff;
+    color: #1e9bff;
+    font-size: 20px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+
+.twenty-two-effect:hover {
+    color: black;
+    border: 2px solid transparent;
+}
+
+.span-effect-six {
+    position: absolute;
+    background: #1e9bff;
+    box-shadow: 0 0 10px #1e9bff, 0 0 20px #1e9bff, 0 0 30px #1e9bff , 0 0 50px #1e9bff, 0 0 80px #1e9bff;
+
+}
+.span-effect-six:nth-child(1),
+.span-effect-six:nth-child(3) {
+    width: 40px;
+    height: 4px;
+}
+
+.span-effect-six:nth-child(2),
+.span-effect-six:nth-child(4) {
+    width: 4px;
+    height: 40px;
+}
+
+.span-effect-six:nth-child(1) {
+    top: calc(50% - 2px);
+    left: -50%;
+    transition: 0.5s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0.25%;
+}
+.twenty-two-effect:hover .span-effect-six:nth-child(1) {
+    left: 50%;
+    transform: scaleX(0);
+    transition-delay: 0s;
+}
+
+/* 1 */
+.span-effect-six:nth-child(3) {
+    top: calc(50% - 2px);
+    right: -50%;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+    transition-delay: 0.25%;
+}
+.twenty-two-effect:hover .span-effect-six:nth-child(3) {
+    right: 50%;
+    transform: scaleX(0);
+    transition-delay: 0s;
+}
+
+/* 2 */
+
+.span-effect-six:nth-child(2) {
+    left: calc(50% - 2px);
+    top: -50%;
+    transition: 0.5s ease-in-out;
+    transform-origin: top;
+    transition-delay: 0.25%;
+}
+.twenty-two-effect:hover .span-effect-six:nth-child(2) {
+    top: 50%;
+    transform: scaleY(0);
+    transition-delay: 0s;
+}
+
+/* 3 */
+
+.span-effect-six:nth-child(4) {
+    left: calc(50% - 2px);
+    bottom: -50%;
+    transition: 0.5s ease-in-out;
+    transform-origin: bottom;
+    transition-delay: 0.25%;
+}
+.twenty-two-effect:hover .span-effect-six:nth-child(4) {
+    bottom: 50%;
+    transform: scaleY(0);
+    transition-delay: 0s;
+}
+
+.twenty-two-effect:before  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e9bff;
+    transform: scale(0);
+    z-index: -1;
+    transition: 1s;
+
+}
+.twenty-two-effect:hover:before {
+    transform: scale(1);
+    transition-delay: 0.25s;
+    box-shadow: 0 0 10px #1e9bff, 0 0 20px #1e9bff, 0 0 30px #1e9bff , 0 0 50px #1e9bff, 0 0 80px #1e9bff;
+}
+
+
+
