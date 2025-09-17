@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #212121;
+    
+}
+
+.fig {
+    width: 500px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.fig img {
+    width: 100%;
+}
+.fig:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #006266;
+    opacity: 0.5;
+    border-radius: 10px;
+    z-index: 0.5;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+
+.fig:hover:before {
+    transform: translateY(0);
+}
+
+.fig .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.fig:hover .caption {
+    opacity: 1;
+}
+
+.fig h3, .fig h5 {
+    margin: 0;
+    letter-spacing: 1px;
+
+}
+.fig h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.fig h5 {
+    font-weight: 300;
+    background-color: #ae895d;
+    border-radius: 5px;
+    font-style: italic;
+}
+
