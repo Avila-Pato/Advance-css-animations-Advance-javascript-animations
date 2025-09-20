@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    position: relative;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #262626;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+span:nth-child(1),
+span:nth-child(3) {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #262626;
+    transition: transform 0.5s ease-in-out;
+}
+
+span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+a:hover span:nth-child(1) {
+    transform: scaleX(1);
+    transition: 0.2s;
+}
+
+span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+a:hover span:nth-child(3) {
+    transform: scaleX(1);
+    transition: 0.2s;
+    transition-delay: 0.4s;
+}
+
+span:nth-child(2),
+span:nth-child(4) {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #262626;
+    transition: transform 0.5s ease-in-out;
+}
+
+span:nth-child(2) {
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+a:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+span:nth-child(4) {
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+a:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+
+
+a:before {
+    content: "";
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transform: scale(0);
+    z-index: -1;
+    transform-origin: top left;
+}
+
+a:hover::before {
+    transform: scale(1);
+    transition: 0.5s;
+    transition-delay: 0.8;
+}
+
+a:hover {
+    color: #fff;
+    transition: 0.2s;
+    transition-delay: 0.3s;
+}
+
+a:after {
+    content: url("./pencil.svg");
+    position: absolute;
+    top: -22px;
+    left: 0;
+    color: #262626;
+    transform: scale(0); /* estado inicial */
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+a:hover::after {
+    transform: scale(1); /* aparece al hacer hover */
+    transition-delay: 0.8s; /* ojo con la unidad */
+}

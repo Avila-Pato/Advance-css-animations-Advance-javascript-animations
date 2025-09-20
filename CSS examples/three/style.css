@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #333;
+    overflow: hidden; /* evita scroll */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.square {
+    position: absolute;
+    bottom: -100px; 
+    background-color: #f2f2f2;
+    animation: boxes 10s infinite ease-in-out;
+}
+
+/* Repartimos los cuadrados en la pantalla */
+.square:nth-child(1) { width: 40px; height: 40px; left: 5%;  animation-delay: 0s; }
+.square:nth-child(2) { width: 60px; height: 60px; left: 15%; animation-delay: 1s; }
+.square:nth-child(3) { width: 30px; height: 30px; left: 25%; animation-delay: 2s; }
+.square:nth-child(4) { width: 80px; height: 80px; left: 35%; animation-delay: 3s; }
+.square:nth-child(5) { width: 50px; height: 50px; left: 45%; animation-delay: 1.5s; }
+.square:nth-child(6) { width: 70px; height: 70px; left: 55%; animation-delay: 2.5s; }
+.square:nth-child(7) { width: 40px; height: 40px; left: 65%; animation-delay: 0.5s; }
+.square:nth-child(8) { width: 90px; height: 90px; left: 75%; animation-delay: 3.5s; }
+.square:nth-child(9) { width: 60px; height: 60px; left: 85%; animation-delay: 2s; }
+.square:nth-child(10){ width: 100px; height: 100px; left: 95%; animation-delay: 4s; }
+
+@keyframes boxes {
+    0% {
+        bottom: -900px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1; /* aparecen al entrar */
+    }
+    100% {
+        bottom: 910%;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+}
