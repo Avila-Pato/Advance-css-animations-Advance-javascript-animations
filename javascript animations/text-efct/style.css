@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #252839;
+}
+
+
+h2 {
+    position: relative;
+    font-size: 10em;
+    color: #fff2;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 900;
+    
+}
+
+@keyframes animatedText {
+    0%, 20% {
+        color: #fff2;
+    }
+    21%, 79% {
+        color: #0f0;
+    }
+    80%, 100% {
+        color: #fff2;
+    }
+}
+
+h2 span {
+    position: relative;
+    animation: animatedText 5s linear infinite;
+}
