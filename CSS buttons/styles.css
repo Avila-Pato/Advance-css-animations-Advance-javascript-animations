@@ -1,3 +1,7 @@
+/* ==================================================
+   ESTILOS GENERALES
+================================================== */
+
 .body {
     height: 100vh;
     width: auto;
@@ -12,7 +16,10 @@
 }
 
 
-/* Primer efecto */
+/* ==================================================
+   EFECTO 01 — Rotación desde la esquina
+   Clase: .one-effect
+================================================== */
 .one-effect {
     position: relative;
     text-decoration: none;
@@ -43,7 +50,10 @@
     transform: rotate(-90deg);
 }
 
-/* Segundo efecto */
+/* ==================================================
+   EFECTO 02 — Fondo que entra desde la izquierda
+   Clase: .second-effect
+================================================== */
 
 .second-effect {
     text-decoration: none;
@@ -79,7 +89,10 @@
 }
 
 
-/* Tercer efecto */
+/* ==================================================
+   EFECTO 03 — Rotación 3D
+   Clase: .third-effect
+================================================== */
 
 .third-effect {
     text-decoration: none;
@@ -130,7 +143,10 @@
     color: #fff;
 }
 
-/* Cuarto efecto */
+/* ==================================================
+   EFECTO 04 — Cambio de tipografía y bordes
+   Clase: .fourth-effect
+================================================== */
 
 
 .fourth-effect {
@@ -150,7 +166,10 @@
     letter-spacing: 10px;
     border: 7px solid #E1332D;
 }
-/* Quinto efecto */
+/* ==================================================
+   EFECTO 05 — Texto HELLO que baja desde arriba
+   Clase: .five-effect
+================================================== */
 
 .five-effect {
    text-decoration: none;
@@ -189,7 +208,10 @@
     transform: translateY(0);
 }
 
-/* Sexto efecto */
+/* ==================================================
+   EFECTO 06 — Brillo diagonal
+   Clase: .six-effect
+================================================== */
 
 .six-effect {
     text-decoration: none;
@@ -222,7 +244,10 @@
     transform: translateX(90%) rotate(45deg);
 }
 
-/*  efecto siete */
+/* ==================================================
+   EFECTO 07 — Panel que entra en diagonal
+   Clase: .seven-effect
+================================================== */
 
 .seven-effect {
     text-decoration: none;
@@ -263,7 +288,10 @@
 
 }
 
-/* octavo efecto */
+/* ==================================================
+   EFECTO 08 — Zoom de fondo
+   Clase: .eight-effect
+================================================== */
 
 .eight-effect {
     text-decoration: none;
@@ -300,7 +328,10 @@
     opacity: 1;
 }
 
-/* efecto con boton */
+/* ==================================================
+   EFECTO 09 — Botón con fondo que crece
+   Clase: .btn
+================================================== */
 
 .btn {
     border: 2px solid tomato;
@@ -339,7 +370,10 @@
     height: 190%;
 }
 
-/* nine-effect */
+/* ==================================================
+   EFECTO 10 — Giro vertical del contenido
+   Clase: .nine-effect
+================================================== */
 
 .nine-effect {
     padding: 20px 40px;
@@ -373,7 +407,10 @@
     transform: rotateX(0deg);
 }
 
-/* ten-effect */
+/* ==================================================
+   EFECTO 11 — Cambio de texto con giro
+   Clase: .ten-effect
+================================================== */
 .ten-effect {
     padding: 20px 40px;
     text-decoration: none;
@@ -434,7 +471,10 @@
     transform: scale(1) rotateY(360deg);
     opacity: 1;
 }
-/* eleven-effect */
+/* ==================================================
+   EFECTO 12 — Círculos que forman el fondo
+   Clase: .eleven-effect y .span-effect
+================================================== */
 
 .eleven-effect {
     width: 220px;
@@ -513,7 +553,10 @@
     transition-delay: 0.4s;
 }
 
-/* twelve-effect */
+/* ==================================================
+   EFECTO 13 — Pliegues 3D
+   Clase: .twelve-effect
+================================================== */
 
 .twelve-effect {
     width: 300px;
@@ -577,7 +620,10 @@
     color: #262626;
 }
 
-/* thirteen-effect */
+/* ==================================================
+   EFECTO 14 — Barras de color animadas
+   Clase: .thirteen-effect y .span-effect-two
+================================================== */
 
 .thirteen-effect {
     text-decoration: none;
@@ -654,7 +700,10 @@
     color: #262626;
 }
 
-/* fourteen-effect */
+/* ==================================================
+   EFECTO 15 — Bordes que giran en 3D
+   Clase: .fourteen-effect
+================================================== */
 
 .fourteen-effect {
     text-decoration: none;
@@ -701,7 +750,10 @@
     transform: rotateX(180deg);
 }
 
-/* fifteen-effect */
+/* ==================================================
+   EFECTO 16 — Bordes que se expanden desde las esquinas
+   Clase: .fifteen-effect
+================================================== */
 
 .fifteen-effect {
    border: none;
@@ -752,7 +804,10 @@
 
 }
 
-/* sixteen-effect */
+/* ==================================================
+   EFECTO 17 — Fondo giratorio y letra animada
+   Clase: .sixteen-effect
+================================================== */
 
 .sixteen-effect {
    text-decoration: none;
@@ -812,7 +867,10 @@
 
 
 
-/* seventeen-effect */
+/* ==================================================
+   EFECTO 18 — Bordes que recorren el botón
+   Clase: .seventeen-effect y .span-effect-four
+================================================== */
 
 .seventeen-effect {
     background-color: red;
@@ -893,7 +951,10 @@
     bottom: 0;
 }
 
-/* eighteen-effect */
+/* ==================================================
+   EFECTO 19 — Barra diagonal que cambia de dirección
+   Clase: .eighteen-effect y .span-effect-five
+================================================== */
 
 
 .eighteen-effect {
@@ -944,7 +1005,10 @@
 }
 
 
-/* nineteen-effect */
+/* ==================================================
+   EFECTO 20 — Dos paneles inclinados
+   Clase: .nineteen-effect
+================================================== */
 
 
 
@@ -1004,7 +1068,10 @@
 }
 
 
-/* twenty-effect */
+/* ==================================================
+   EFECTO 21 — Botón redondeado con expansión
+   Clase: .twenty-effect
+================================================== */
 
 
 .twenty-effect {
@@ -1052,7 +1119,10 @@
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-/* twenty-one-effect */
+/* ==================================================
+   EFECTO 22 — Barras que entran desde ambos lados
+   Clase: .twenty-one-effect
+================================================== */
 
 
 .twenty-one-effect {
@@ -1110,7 +1180,11 @@
     transform: translateX(0%);
 }
 
-/* twenty-two-effect */
+/* ==================================================
+   EFECTOS 23 Y 24 — Bordes luminosos animados
+   Clase compartida: .twenty-two-effect
+   Nota: ambos botones usan el mismo efecto CSS.
+================================================== */
 
 .container-btn {
     display: flex;
@@ -1232,6 +1306,3 @@
     transition-delay: 0.25s;
     box-shadow: 0 0 10px #1e9bff, 0 0 20px #1e9bff, 0 0 30px #1e9bff , 0 0 50px #1e9bff, 0 0 80px #1e9bff;
 }
-
-
-
